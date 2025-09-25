@@ -1,0 +1,14 @@
+{
+  "name": "graphql-client",
+  "version": "1.0.0",
+  "description": "GraphQL Client for testing",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test-queries": "node test-queries.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.2"
+  }
+}

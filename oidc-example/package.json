@@ -1,0 +1,14 @@
+{
+  "name": "oidc-example",
+  "version": "1.0.0",
+  "description": "Example OIDC workflow implementation",
+  "scripts": {
+    "install-all": "cd identity-provider && npm install && cd ../client-app && npm install",
+    "start-idp": "cd identity-provider && npm start",
+    "start-client": "cd client-app && npm start",
+    "test": "node test-workflow.js"
+  },
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  }
+}

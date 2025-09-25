@@ -1,0 +1,16 @@
+{
+  "name": "graphql-example",
+  "version": "1.0.0",
+  "description": "GraphQL microservices example with users and posts",
+  "scripts": {
+    "start:users": "cd services/users && npm start",
+    "start:posts": "cd services/posts && npm start",
+    "start:gateway": "cd graphql-gateway && npm start",
+    "start:client": "cd client && npm start",
+    "install:all": "npm install && cd services/users && npm install && cd ../posts && npm install && cd ../../graphql-gateway && npm install && cd ../client && npm install",
+    "dev": "concurrently \"npm run start:users\" \"npm run start:posts\" \"npm run start:gateway\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
