@@ -1,0 +1,12 @@
+# Binaries - download via setup script
+*.exe
+*.zip
+
+# SQLite runtime files
+*.db-shm
+*.db-wal
+.*.db-litestream/
+
+# Databases (created by setup script)
+fruits.db
+fruits2.db
